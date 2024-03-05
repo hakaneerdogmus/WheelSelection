@@ -1,0 +1,600 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7E0FAA152B9732F300B8B221 /* wheelSelectionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0FAA142B9732F300B8B221 /* wheelSelectionApp.swift */; };
+		7E0FAA192B9732F400B8B221 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E0FAA182B9732F400B8B221 /* Assets.xcassets */; };
+		7E0FAA1C2B9732F400B8B221 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7E0FAA1B2B9732F400B8B221 /* Preview Assets.xcassets */; };
+		7E0FAA242B97332800B8B221 /* FortuneWheel in Frameworks */ = {isa = PBXBuildFile; productRef = 7E0FAA232B97332800B8B221 /* FortuneWheel */; };
+		7E0FAA272B97333600B8B221 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 7E0FAA262B97333600B8B221 /* Lottie */; };
+		7E0FAA2A2B97334400B8B221 /* SimpleToast in Frameworks */ = {isa = PBXBuildFile; productRef = 7E0FAA292B97334400B8B221 /* SimpleToast */; };
+		7E0FAA2C2B97337B00B8B221 /* wheelSpin.json in Resources */ = {isa = PBXBuildFile; fileRef = 7E0FAA2B2B97337B00B8B221 /* wheelSpin.json */; };
+		7E0FAA2E2B97338300B8B221 /* spin.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7E0FAA2D2B97338300B8B221 /* spin.mp3 */; };
+		7E0FAA322B97345300B8B221 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0FAA312B97345300B8B221 /* ToastView.swift */; };
+		7E0FAA372B97345800B8B221 /* SpinDurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0FAA342B97345800B8B221 /* SpinDurationView.swift */; };
+		7E0FAA382B97345800B8B221 /* SendFeedbackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0FAA352B97345800B8B221 /* SendFeedbackView.swift */; };
+		7E0FAA392B97345800B8B221 /* WheelColorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0FAA362B97345800B8B221 /* WheelColorView.swift */; };
+		7E0FAA3B2B97346200B8B221 /* Spin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0FAA3A2B97346200B8B221 /* Spin.swift */; };
+		7E0FAA3D2B97346E00B8B221 /* WheelAdd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0FAA3C2B97346E00B8B221 /* WheelAdd.swift */; };
+		7E0FAA3F2B97347400B8B221 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0FAA3E2B97347400B8B221 /* SettingsView.swift */; };
+		7E0FAA412B97347D00B8B221 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0FAA402B97347D00B8B221 /* ContentView.swift */; };
+		7E0FAA432B97348200B8B221 /* AnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0FAA422B97348200B8B221 /* AnimationView.swift */; };
+		7E0FAA462B97349700B8B221 /* WheelItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0FAA452B97349700B8B221 /* WheelItemModel.swift */; };
+		7E0FAA482B97349E00B8B221 /* WheelColorModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0FAA472B97349D00B8B221 /* WheelColorModel.swift */; };
+		7E0FAA4A2B9734A400B8B221 /* SpinDuurationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0FAA492B9734A400B8B221 /* SpinDuurationModel.swift */; };
+		7E0FAA4F2B9734B900B8B221 /* SpinDurationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0FAA4D2B9734B900B8B221 /* SpinDurationViewModel.swift */; };
+		7E0FAA502B9734B900B8B221 /* WheelColorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0FAA4E2B9734B900B8B221 /* WheelColorViewModel.swift */; };
+		7E0FAA592B9734C400B8B221 /* FortuneWheelModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0FAA532B9734C400B8B221 /* FortuneWheelModel.swift */; };
+		7E0FAA5A2B9734C400B8B221 /* SpinWheelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0FAA552B9734C400B8B221 /* SpinWheelView.swift */; };
+		7E0FAA5B2B9734C400B8B221 /* SpinWheelCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0FAA562B9734C400B8B221 /* SpinWheelCell.swift */; };
+		7E0FAA5C2B9734C400B8B221 /* FortuneWheel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0FAA572B9734C400B8B221 /* FortuneWheel.swift */; };
+		7E0FAA5D2B9734C400B8B221 /* FortuneWheelViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0FAA582B9734C400B8B221 /* FortuneWheelViewModel.swift */; };
+		7E0FAA602B9734D500B8B221 /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0FAA5F2B9734D500B8B221 /* UserDefault.swift */; };
+		7E0FAA662B9734E300B8B221 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0FAA622B9734E300B8B221 /* Animation.swift */; };
+		7E0FAA672B9734E300B8B221 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0FAA632B9734E300B8B221 /* AudioManager.swift */; };
+		7E0FAA682B9734E300B8B221 /* SpeechManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0FAA642B9734E300B8B221 /* SpeechManager.swift */; };
+		7E0FAA692B9734E300B8B221 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E0FAA652B9734E300B8B221 /* WebView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7E0FAA112B9732F300B8B221 /* wheelSelection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = wheelSelection.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E0FAA142B9732F300B8B221 /* wheelSelectionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wheelSelectionApp.swift; sourceTree = "<group>"; };
+		7E0FAA182B9732F400B8B221 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7E0FAA1B2B9732F400B8B221 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		7E0FAA2B2B97337B00B8B221 /* wheelSpin.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wheelSpin.json; sourceTree = "<group>"; };
+		7E0FAA2D2B97338300B8B221 /* spin.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = spin.mp3; sourceTree = "<group>"; };
+		7E0FAA312B97345300B8B221 /* ToastView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
+		7E0FAA342B97345800B8B221 /* SpinDurationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinDurationView.swift; sourceTree = "<group>"; };
+		7E0FAA352B97345800B8B221 /* SendFeedbackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SendFeedbackView.swift; sourceTree = "<group>"; };
+		7E0FAA362B97345800B8B221 /* WheelColorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WheelColorView.swift; sourceTree = "<group>"; };
+		7E0FAA3A2B97346200B8B221 /* Spin.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Spin.swift; sourceTree = "<group>"; };
+		7E0FAA3C2B97346E00B8B221 /* WheelAdd.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WheelAdd.swift; sourceTree = "<group>"; };
+		7E0FAA3E2B97347400B8B221 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		7E0FAA402B97347D00B8B221 /* ContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		7E0FAA422B97348200B8B221 /* AnimationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationView.swift; sourceTree = "<group>"; };
+		7E0FAA452B97349700B8B221 /* WheelItemModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WheelItemModel.swift; sourceTree = "<group>"; };
+		7E0FAA472B97349D00B8B221 /* WheelColorModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WheelColorModel.swift; sourceTree = "<group>"; };
+		7E0FAA492B9734A400B8B221 /* SpinDuurationModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinDuurationModel.swift; sourceTree = "<group>"; };
+		7E0FAA4D2B9734B900B8B221 /* SpinDurationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinDurationViewModel.swift; sourceTree = "<group>"; };
+		7E0FAA4E2B9734B900B8B221 /* WheelColorViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WheelColorViewModel.swift; sourceTree = "<group>"; };
+		7E0FAA532B9734C400B8B221 /* FortuneWheelModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FortuneWheelModel.swift; sourceTree = "<group>"; };
+		7E0FAA552B9734C400B8B221 /* SpinWheelView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinWheelView.swift; sourceTree = "<group>"; };
+		7E0FAA562B9734C400B8B221 /* SpinWheelCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinWheelCell.swift; sourceTree = "<group>"; };
+		7E0FAA572B9734C400B8B221 /* FortuneWheel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FortuneWheel.swift; sourceTree = "<group>"; };
+		7E0FAA582B9734C400B8B221 /* FortuneWheelViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FortuneWheelViewModel.swift; sourceTree = "<group>"; };
+		7E0FAA5F2B9734D500B8B221 /* UserDefault.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefault.swift; sourceTree = "<group>"; };
+		7E0FAA622B9734E300B8B221 /* Animation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		7E0FAA632B9734E300B8B221 /* AudioManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		7E0FAA642B9734E300B8B221 /* SpeechManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpeechManager.swift; sourceTree = "<group>"; };
+		7E0FAA652B9734E300B8B221 /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7E0FAA0E2B9732F300B8B221 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E0FAA242B97332800B8B221 /* FortuneWheel in Frameworks */,
+				7E0FAA2A2B97334400B8B221 /* SimpleToast in Frameworks */,
+				7E0FAA272B97333600B8B221 /* Lottie in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7E0FAA082B9732F300B8B221 = {
+			isa = PBXGroup;
+			children = (
+				7E0FAA132B9732F300B8B221 /* wheelSelection */,
+				7E0FAA122B9732F300B8B221 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7E0FAA122B9732F300B8B221 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7E0FAA112B9732F300B8B221 /* wheelSelection.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7E0FAA132B9732F300B8B221 /* wheelSelection */ = {
+			isa = PBXGroup;
+			children = (
+				7E0FAA612B9734E300B8B221 /* Manager */,
+				7E0FAA5E2B9734D500B8B221 /* UserDefault */,
+				7E0FAA512B9734C400B8B221 /* Sources */,
+				7E0FAA4B2B9734AB00B8B221 /* ViewModel */,
+				7E0FAA442B97348C00B8B221 /* Model */,
+				7E0FAA2F2B97344500B8B221 /* View */,
+				7E0FAA142B9732F300B8B221 /* wheelSelectionApp.swift */,
+				7E0FAA182B9732F400B8B221 /* Assets.xcassets */,
+				7E0FAA2D2B97338300B8B221 /* spin.mp3 */,
+				7E0FAA2B2B97337B00B8B221 /* wheelSpin.json */,
+				7E0FAA1A2B9732F400B8B221 /* Preview Content */,
+			);
+			path = wheelSelection;
+			sourceTree = "<group>";
+		};
+		7E0FAA1A2B9732F400B8B221 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				7E0FAA1B2B9732F400B8B221 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		7E0FAA2F2B97344500B8B221 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7E0FAA332B97345800B8B221 /* SettingViews */,
+				7E0FAA302B97345300B8B221 /* ToastView */,
+				7E0FAA3A2B97346200B8B221 /* Spin.swift */,
+				7E0FAA3C2B97346E00B8B221 /* WheelAdd.swift */,
+				7E0FAA3E2B97347400B8B221 /* SettingsView.swift */,
+				7E0FAA402B97347D00B8B221 /* ContentView.swift */,
+				7E0FAA422B97348200B8B221 /* AnimationView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7E0FAA302B97345300B8B221 /* ToastView */ = {
+			isa = PBXGroup;
+			children = (
+				7E0FAA312B97345300B8B221 /* ToastView.swift */,
+			);
+			path = ToastView;
+			sourceTree = "<group>";
+		};
+		7E0FAA332B97345800B8B221 /* SettingViews */ = {
+			isa = PBXGroup;
+			children = (
+				7E0FAA342B97345800B8B221 /* SpinDurationView.swift */,
+				7E0FAA352B97345800B8B221 /* SendFeedbackView.swift */,
+				7E0FAA362B97345800B8B221 /* WheelColorView.swift */,
+			);
+			path = SettingViews;
+			sourceTree = "<group>";
+		};
+		7E0FAA442B97348C00B8B221 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7E0FAA452B97349700B8B221 /* WheelItemModel.swift */,
+				7E0FAA472B97349D00B8B221 /* WheelColorModel.swift */,
+				7E0FAA492B9734A400B8B221 /* SpinDuurationModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		7E0FAA4B2B9734AB00B8B221 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7E0FAA4C2B9734B900B8B221 /* SettingsViewModel */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		7E0FAA4C2B9734B900B8B221 /* SettingsViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7E0FAA4D2B9734B900B8B221 /* SpinDurationViewModel.swift */,
+				7E0FAA4E2B9734B900B8B221 /* WheelColorViewModel.swift */,
+			);
+			path = SettingsViewModel;
+			sourceTree = "<group>";
+		};
+		7E0FAA512B9734C400B8B221 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				7E0FAA522B9734C400B8B221 /* FortuneWheel */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		7E0FAA522B9734C400B8B221 /* FortuneWheel */ = {
+			isa = PBXGroup;
+			children = (
+				7E0FAA532B9734C400B8B221 /* FortuneWheelModel.swift */,
+				7E0FAA542B9734C400B8B221 /* SpinWheel */,
+				7E0FAA572B9734C400B8B221 /* FortuneWheel.swift */,
+				7E0FAA582B9734C400B8B221 /* FortuneWheelViewModel.swift */,
+			);
+			path = FortuneWheel;
+			sourceTree = "<group>";
+		};
+		7E0FAA542B9734C400B8B221 /* SpinWheel */ = {
+			isa = PBXGroup;
+			children = (
+				7E0FAA552B9734C400B8B221 /* SpinWheelView.swift */,
+				7E0FAA562B9734C400B8B221 /* SpinWheelCell.swift */,
+			);
+			path = SpinWheel;
+			sourceTree = "<group>";
+		};
+		7E0FAA5E2B9734D500B8B221 /* UserDefault */ = {
+			isa = PBXGroup;
+			children = (
+				7E0FAA5F2B9734D500B8B221 /* UserDefault.swift */,
+			);
+			path = UserDefault;
+			sourceTree = "<group>";
+		};
+		7E0FAA612B9734E300B8B221 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				7E0FAA622B9734E300B8B221 /* Animation.swift */,
+				7E0FAA632B9734E300B8B221 /* AudioManager.swift */,
+				7E0FAA642B9734E300B8B221 /* SpeechManager.swift */,
+				7E0FAA652B9734E300B8B221 /* WebView.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7E0FAA102B9732F300B8B221 /* wheelSelection */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7E0FAA1F2B9732F400B8B221 /* Build configuration list for PBXNativeTarget "wheelSelection" */;
+			buildPhases = (
+				7E0FAA0D2B9732F300B8B221 /* Sources */,
+				7E0FAA0E2B9732F300B8B221 /* Frameworks */,
+				7E0FAA0F2B9732F300B8B221 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = wheelSelection;
+			packageProductDependencies = (
+				7E0FAA232B97332800B8B221 /* FortuneWheel */,
+				7E0FAA262B97333600B8B221 /* Lottie */,
+				7E0FAA292B97334400B8B221 /* SimpleToast */,
+			);
+			productName = wheelSelection;
+			productReference = 7E0FAA112B9732F300B8B221 /* wheelSelection.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7E0FAA092B9732F300B8B221 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					7E0FAA102B9732F300B8B221 = {
+						CreatedOnToolsVersion = 15.2;
+					};
+				};
+			};
+			buildConfigurationList = 7E0FAA0C2B9732F300B8B221 /* Build configuration list for PBXProject "wheelSelection" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7E0FAA082B9732F300B8B221;
+			packageReferences = (
+				7E0FAA222B97332800B8B221 /* XCRemoteSwiftPackageReference "FortuneWheel" */,
+				7E0FAA252B97333600B8B221 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				7E0FAA282B97334400B8B221 /* XCRemoteSwiftPackageReference "SimpleToast" */,
+			);
+			productRefGroup = 7E0FAA122B9732F300B8B221 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7E0FAA102B9732F300B8B221 /* wheelSelection */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7E0FAA0F2B9732F300B8B221 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E0FAA2E2B97338300B8B221 /* spin.mp3 in Resources */,
+				7E0FAA1C2B9732F400B8B221 /* Preview Assets.xcassets in Resources */,
+				7E0FAA192B9732F400B8B221 /* Assets.xcassets in Resources */,
+				7E0FAA2C2B97337B00B8B221 /* wheelSpin.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7E0FAA0D2B9732F300B8B221 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7E0FAA462B97349700B8B221 /* WheelItemModel.swift in Sources */,
+				7E0FAA372B97345800B8B221 /* SpinDurationView.swift in Sources */,
+				7E0FAA592B9734C400B8B221 /* FortuneWheelModel.swift in Sources */,
+				7E0FAA662B9734E300B8B221 /* Animation.swift in Sources */,
+				7E0FAA4F2B9734B900B8B221 /* SpinDurationViewModel.swift in Sources */,
+				7E0FAA502B9734B900B8B221 /* WheelColorViewModel.swift in Sources */,
+				7E0FAA322B97345300B8B221 /* ToastView.swift in Sources */,
+				7E0FAA5B2B9734C400B8B221 /* SpinWheelCell.swift in Sources */,
+				7E0FAA3F2B97347400B8B221 /* SettingsView.swift in Sources */,
+				7E0FAA3B2B97346200B8B221 /* Spin.swift in Sources */,
+				7E0FAA682B9734E300B8B221 /* SpeechManager.swift in Sources */,
+				7E0FAA482B97349E00B8B221 /* WheelColorModel.swift in Sources */,
+				7E0FAA152B9732F300B8B221 /* wheelSelectionApp.swift in Sources */,
+				7E0FAA5D2B9734C400B8B221 /* FortuneWheelViewModel.swift in Sources */,
+				7E0FAA692B9734E300B8B221 /* WebView.swift in Sources */,
+				7E0FAA412B97347D00B8B221 /* ContentView.swift in Sources */,
+				7E0FAA602B9734D500B8B221 /* UserDefault.swift in Sources */,
+				7E0FAA5C2B9734C400B8B221 /* FortuneWheel.swift in Sources */,
+				7E0FAA5A2B9734C400B8B221 /* SpinWheelView.swift in Sources */,
+				7E0FAA672B9734E300B8B221 /* AudioManager.swift in Sources */,
+				7E0FAA4A2B9734A400B8B221 /* SpinDuurationModel.swift in Sources */,
+				7E0FAA392B97345800B8B221 /* WheelColorView.swift in Sources */,
+				7E0FAA432B97348200B8B221 /* AnimationView.swift in Sources */,
+				7E0FAA382B97345800B8B221 /* SendFeedbackView.swift in Sources */,
+				7E0FAA3D2B97346E00B8B221 /* WheelAdd.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7E0FAA1D2B9732F400B8B221 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7E0FAA1E2B9732F400B8B221 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7E0FAA202B9732F400B8B221 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"wheelSelection/Preview Content\"";
+				DEVELOPMENT_TEAM = L2PCT4H5A2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hakanerdogmus.wheelSelection;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7E0FAA212B9732F400B8B221 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"wheelSelection/Preview Content\"";
+				DEVELOPMENT_TEAM = L2PCT4H5A2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.hakanerdogmus.wheelSelection;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7E0FAA0C2B9732F300B8B221 /* Build configuration list for PBXProject "wheelSelection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E0FAA1D2B9732F400B8B221 /* Debug */,
+				7E0FAA1E2B9732F400B8B221 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7E0FAA1F2B9732F400B8B221 /* Build configuration list for PBXNativeTarget "wheelSelection" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E0FAA202B9732F400B8B221 /* Debug */,
+				7E0FAA212B9732F400B8B221 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		7E0FAA222B97332800B8B221 /* XCRemoteSwiftPackageReference "FortuneWheel" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sameersyd/FortuneWheel.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.5;
+			};
+		};
+		7E0FAA252B97333600B8B221 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.1;
+			};
+		};
+		7E0FAA282B97334400B8B221 /* XCRemoteSwiftPackageReference "SimpleToast" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sanzaru/SimpleToast.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		7E0FAA232B97332800B8B221 /* FortuneWheel */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E0FAA222B97332800B8B221 /* XCRemoteSwiftPackageReference "FortuneWheel" */;
+			productName = FortuneWheel;
+		};
+		7E0FAA262B97333600B8B221 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E0FAA252B97333600B8B221 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		7E0FAA292B97334400B8B221 /* SimpleToast */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7E0FAA282B97334400B8B221 /* XCRemoteSwiftPackageReference "SimpleToast" */;
+			productName = SimpleToast;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 7E0FAA092B9732F300B8B221 /* Project object */;
+}
